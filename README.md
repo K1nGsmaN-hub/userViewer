@@ -6,3 +6,4 @@
 ![addUser](https://i.ibb.co/87vQpM2/addUser.png)
 * Work with a data base on PHP / работа с базой данных на PHP
 * Modal winodw on JS / Модальные окна на JS
+* Adaptive for all laptop monitors

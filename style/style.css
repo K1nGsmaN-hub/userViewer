@@ -147,3 +147,9 @@ footer .footer__text:last-child {
     font-size: 11px;
     color: #9a9fa1;
 }
+
+@media screen and (max-width: 1024px) {
+    body .content .content__modal-window.window-active .window__content .content__text form input[type='submit'] {
+        width: 20%;
+    }
+}
