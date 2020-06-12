@@ -1,0 +1,149 @@
+@import "reset.css";
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #2d3436;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+body .content {
+    display: flex;
+    justify-self: center;
+    margin-bottom: 50px;
+}
+body .content .content__button .button_open {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    color: #dfe6e9;
+    background-color: #636e72;
+    border: none;
+    border-radius: 10px;
+    padding: 25px 25px;
+}
+body .content .content__button #buttonOpenViewUsers{
+    margin-right: 20px;
+}
+body .content .content__button .button_open:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+body .content .content__modal-window{
+    z-index: -1;
+    visibility: hidden;
+}
+body .content .content__modal-window .window__content{
+    position: absolute;
+    z-index: -1;
+    font-size: 0;
+    width: 15%;
+    transition: width 1s ease;
+}
+body .content .content__modal-window.window-active {
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+body .content .content__modal-window.window-active .window__content {
+    position: relative;
+    width: 50%;
+    padding: 30px 30px;
+    background-color: #dfe6e9;
+    border-radius: 10px;
+    z-index: 2;
+}
+body .content .content__modal-window.window-active .window__content .button_close {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+body .content .content__modal-window.window-active .window__content .button_close:before,
+body .content .content__modal-window.window-active .window__content .button_close:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 3px;
+    top: 8px;
+    background-color: #b2bec3;
+}
+body .content .content__modal-window.window-active .window__content .button_close:before {
+    transform: rotate(45deg);
+}
+body .content .content__modal-window.window-active .window__content .button_close:after {
+    transform: rotate(-45deg);
+}
+body .content .content__modal-window .window__content .content__text .text_title {
+    transition: font-size 0.7s ease;
+}
+body .content .content__modal-window.window-active .window__content .content__text .text_title {
+    font-size: 25px;
+    font-weight: 600;
+    color: #2d3436;
+    margin-bottom: 20px;
+}
+body .content .content__modal-window .window__content .content__text .text_description {
+    transition: font-size 0.5s linear;
+}
+body .content .content__modal-window.window-active .window__content .content__text .text_description {
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #2d3436;
+}
+body .content .content__modal-window.window-active .window__content .content__text form {
+    display: flex;
+    flex-direction: column;
+}
+body .content .content__modal-window.window-active .window__content .content__text form input[type='text'] {
+    width: 40%;
+    font-size: 16px;
+    color: #dfe6e9;
+    border: none;
+    border-radius: 5px;
+    background-color: #636e72;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+::-webkit-input-placeholder { color: #dfe6e9; }
+:-moz-placeholder { color: #dfe6e9; }
+:-ms-input-placeholder { color: #dfe6e9; }
+body .content .content__modal-window.window-active .window__content .content__text form input[type='submit'] {
+    width: 15%;
+    font-size: 16px;
+    padding: 10px;
+    color: #dfe6e9;
+    border: none;
+    border-radius: 5px;
+    background-color: #79868b;
+}
+footer .footer__text {
+    text-align: center;
+    font-size: 14px;
+    color: #dfe6e9;
+    line-height: 2em;
+}
+footer .footer__text a {
+    text-decoration: none;
+    display: block;
+    color: #e17055;
+}
+footer .footer__text:last-child {
+    font-size: 11px;
+    color: #9a9fa1;
+}
